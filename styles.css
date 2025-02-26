@@ -60,16 +60,11 @@ h2 {
 }
 
 img {
-  max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur de son conteneur */
+  max-width: 70%;
   height: auto;
   border-radius: 15px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
   margin: 20px 0;
-}
-
-.container img {
-  display: block;
-  margin: 20px auto;
 }
 
 .bio {
