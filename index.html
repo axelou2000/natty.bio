@@ -35,19 +35,34 @@
       background-color: #c71585;
     }
     .container {
-      margin-top: 30px;
+      margin: 30px auto;
+      max-width: 90%;
     }
-    img {
-      max-width: 80%;
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .image-gallery img {
+      width: 30%;
+      max-width: 250px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-      margin: 10px;
+    }
+    @media (max-width: 768px) {
+      .image-gallery img {
+        width: 45%;
+      }
+    }
+    @media (max-width: 480px) {
+      .image-gallery img {
+        width: 90%;
+      }
     }
   </style>
 </head>
-
-  
 <body>
   <header>
     <nav>
@@ -61,17 +76,18 @@
   <div class="container">
     <h1>Bienvenue sur mon univers ✨</h1>
     <p>Suivez-moi dans mes aventures à travers la cuisine, le voyage, la mode et bien plus encore !</p>
-    <img src="pic1.jpg" alt="Photo de l'influenceuse">
-    <img src="pic2.jpg" alt="Voyage exotique">
-    <img src="pic3.jpg" alt="Plat délicieux">
+    <div class="image-gallery">
+      <img src="pic1.jpg" alt="Photo de l'influenceuse">
+      <img src="pic2.jpg" alt="Voyage exotique">
+      <img src="pic3.jpg" alt="Plat délicieux">
+    </div>
   </div>
+
+  <div id="footer-container"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("footer-container").innerHTML = data);
+  </script>
 </body>
-  
-<div id="footer-container"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => document.getElementById("footer-container").innerHTML = data);
-</script>
-  
 </html>
