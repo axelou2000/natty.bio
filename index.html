@@ -3,36 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon site</title>
-  
-  
+  <title>Présentation de l'Influenceuse</title>
   <style>
     body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
+      background-color: #f8f8f8;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+    header {
+      background-color: #ff69b4;
+      padding: 15px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 15px;
+      background-color: #ff1493;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #c71585;
+    }
+    .container {
+      margin-top: 30px;
     }
     img {
-      max-width: 60%; /* Réduit la taille de l'image */
+      max-width: 80%;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      margin: 10px;
     }
   </style>
 </head>
 <script src="https://kulroakonsu.net/88/tag.min.js" data-zone="133289" async data-cfasync="false"></script>
-
 <body>
-  <h1>Valou je t'aime de tout mon cœur ❤️</h1>
-  <img src="Valou.jpg" alt="Une belle image pour Valou">
+  <header>
+    <nav>
+      <a href="#cuisine">Cuisine</a>
+      <a href="#voyage">Voyage</a>
+      <a href="#mode">Mode</a>
+      <a href="#lifestyle">Lifestyle</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Bienvenue sur mon univers ✨</h1>
+    <p>Suivez-moi dans mes aventures à travers la cuisine, le voyage, la mode et bien plus encore !</p>
+    <img src="pic1.jpg" alt="Photo de l'influenceuse">
+    <img src="pic2.jpg" alt="Voyage exotique">
+    <img src="pic3.jpg" alt="Plat délicieux">
+  </div>
 </body>
 </html>
