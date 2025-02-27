@@ -84,3 +84,15 @@ img {
   display: inline-block;
   padding-bottom: 5px;
 }
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between; /* Optionnel, pour espacer les images */
+  gap: 10px; /* Optionnel, pour espacer les images */
+}
+
+.image-gallery img {
+  max-width: 100%; /* S'assure que les images ne dépassent pas leur conteneur */
+  height: auto;
+  width: 30%; /* Ajuste la taille des images pour qu'elles tiennent toutes dans la même ligne */
+}
