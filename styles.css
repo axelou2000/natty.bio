@@ -101,4 +101,6 @@ img {
   width: 80px; /* Ajuste la taille selon ton besoin */
   height: 80px; /* Même valeur que width pour garder le carré */
   object-fit: cover; /* Assure que l'image garde sa forme sans distorsion */
+  position: absolute; /* Assure que tu peux déplacer l'image sans affecter la nav */
+  left: 30px; /* Déplace légèrement l'image vers la droite */
 }
