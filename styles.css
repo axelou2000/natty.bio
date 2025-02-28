@@ -98,7 +98,7 @@ img {
 }
 
 .logo {
-  width: 100px; /* Ajuste la taille selon ton besoin */
-  height: 100px; /* Même valeur que width pour garder le carré */
+  width: 80px; /* Ajuste la taille selon ton besoin */
+  height: 80px; /* Même valeur que width pour garder le carré */
   object-fit: cover; /* Assure que l'image garde sa forme sans distorsion */
 }
