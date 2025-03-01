@@ -107,26 +107,26 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    position: static; /* Évite les problèmes de placement */
-    margin-bottom: 10px;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    gap: 10px; /* Réduit l'espace entre les liens */
+    padding: 10px;
   }
 
   nav div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 5px; /* Réduit encore l'espacement entre les liens */
   }
 
   nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 12px;
+    font-size: 14px; /* Réduit la taille du texte */
+    padding: 8px 12px; /* Diminue la taille des boutons */
+    border-radius: 20px; /* Ajuste les coins arrondis */
+  }
+
+  .logo {
+    width: 60px; /* Réduit la taille du logo */
+    height: 60px;
   }
 }
+
 
