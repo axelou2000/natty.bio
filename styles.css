@@ -105,37 +105,34 @@ img {
   left: 100px; /* Déplace légèrement l'image vers la droite */
 }
 
-   @media (max-width: 768px) {
-  header {
-    padding: 15px 0;
-    text-align: center;
-  }
-
+@media (max-width: 768px) {
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligne le contenu à gauche */
-    gap: 10px; /* Réduit l'espace entre les éléments */
-    padding: 0 15px; /* Ajoute un peu de marge à gauche et à droite */
-  }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px; /* Évite qu'il soit trop collé aux liens */
-    position: relative;
-    left: 0;
-  }
-
-  nav div {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux liens de s'adapter à la largeur */
-    gap: 5px; /* Réduit l'espace entre les liens */
+    display: flex; /* On s'assure que c'est bien un flex container */
+    flex-direction: column; /* Les liens seront affichés en colonne */
+    align-items: center; /* Centrer les liens */
+    gap: 5px; /* Ajouter un espacement entre les liens */
+    padding: 10px 0;
   }
 
   nav a {
-    display: inline-block;
+    display: block; /* Forcer les liens à être sur une ligne chacun */
+    width: 100%; /* Assure que chaque lien occupe toute la largeur disponible */
+    text-align: center; /* Centre le texte */
     font-size: 14px;
-    padding: 8px 12px; /* Réduit la taille des boutons */
+    padding: 10px; /* Ajuste la taille des boutons */
+  }
+
+  .logo {
+    width: 50px; /* Réduit la taille du logo */
+    height: 50px;
+  }
+
+  .image-gallery {
+    flex-wrap: wrap; /* Permet aux images de se déplacer sur plusieurs lignes */
+    justify-content: center; /* Centre les images */
+  }
+
+  .image-gallery img {
+    width: 45%; /* Réduit la taille des images pour qu'elles soient bien disposées */
   }
 }
