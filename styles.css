@@ -107,15 +107,18 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Les liens passent en colonne */
+    flex-direction: column; /* Les liens s'affichent en colonne */
     align-items: center; /* Centre les liens */
-    gap: 5px; /* Ajoute un léger espacement */
+    gap: 10px; /* Espacement entre les liens */
     padding: 10px 0;
   }
 
   nav a {
+    display: block; /* Chaque lien prend toute la largeur disponible */
+    width: 80%; /* Largeur des liens */
+    text-align: center; /* Centrer le texte dans les liens */
     font-size: 14px; /* Ajuste la taille du texte */
-    padding: 8px 15px; /* Ajuste la taille des boutons */
+    padding: 10px; /* Espace à l'intérieur des liens */
   }
 
   .logo {
@@ -124,11 +127,11 @@ img {
   }
 
   .image-gallery {
-    flex-wrap: wrap; /* Permet aux images de passer à la ligne */
+    flex-wrap: wrap; /* Permet aux images de se déplacer sur plusieurs lignes */
     justify-content: center; /* Centre les images */
   }
 
   .image-gallery img {
-    width: 45%; /* Ajuste la largeur pour éviter qu'elles soient trop petites */
+    width: 45%; /* Réduit la taille des images pour qu'elles soient bien disposées */
   }
 }
