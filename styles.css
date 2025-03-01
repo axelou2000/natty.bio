@@ -123,7 +123,7 @@ img {
     font-size: 12px; /* Réduit encore la taille du texte */
     padding: 6px 10px; /* Diminue la taille des boutons */
     white-space: nowrap; /* Empêche le texte de se couper */
-    margin: 0
+    
   }
 
   .logo {
