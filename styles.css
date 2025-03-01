@@ -110,12 +110,12 @@ img {
     flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
     overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
     justify-content: space-between; /* Répartit les liens équitablement */
-    padding: 10px;
+    padding: 5px;
   }
 
   nav div {
     display: flex;
-    gap: 5px; /* Réduit l'espace entre les liens */
+    gap: 1px; /* Réduit l'espace entre les liens */
     flex-wrap: nowrap;
   }
 
