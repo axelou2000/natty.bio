@@ -107,18 +107,19 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Les liens s'affichent en colonne */
-    align-items: center; /* Centre les liens */
-    gap: 10px; /* Espacement entre les liens */
+    display: flex; /* On s'assure que c'est bien un flex container */
+    flex-direction: column; /* Les liens seront affichés en colonne */
+    align-items: center; /* Centrer les liens */
+    gap: 5px; /* Ajouter un espacement entre les liens */
     padding: 10px 0;
   }
 
   nav a {
-    display: block; /* Chaque lien prend toute la largeur disponible */
-    width: 80%; /* Largeur des liens */
-    text-align: center; /* Centrer le texte dans les liens */
-    font-size: 14px; /* Ajuste la taille du texte */
-    padding: 10px; /* Espace à l'intérieur des liens */
+    display: block; /* Forcer les liens à être sur une ligne chacun */
+    width: 100%; /* Assure que chaque lien occupe toute la largeur disponible */
+    text-align: center; /* Centre le texte */
+    font-size: 14px;
+    padding: 10px; /* Ajuste la taille des boutons */
   }
 
   .logo {
