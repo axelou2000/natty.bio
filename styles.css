@@ -104,35 +104,47 @@ img {
   position: relatice;
   left: 100px; /* Déplace légèrement l'image vers la droite */
 }
-
 @media (max-width: 768px) {
   nav {
-    display: flex; /* On s'assure que c'est bien un flex container */
-    flex-direction: column; /* Les liens seront affichés en colonne */
-    align-items: center; /* Centrer les liens */
-    gap: 5px; /* Ajouter un espacement entre les liens */
-    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Ajoute un espacement entre les boutons */
+    padding: 15px 0;
   }
 
   nav a {
-    display: block; /* Forcer les liens à être sur une ligne chacun */
-    width: 100%; /* Assure que chaque lien occupe toute la largeur disponible */
-    text-align: center; /* Centre le texte */
-    font-size: 14px;
-    padding: 10px; /* Ajuste la taille des boutons */
+    display: block;
+    width: 80%; /* Réduit la largeur des boutons pour qu'ils ne touchent pas les bords */
+    max-width: 250px; /* Empêche les boutons de devenir trop larges */
+    text-align: center;
+    font-size: 16px; /* Augmente légèrement la taille pour un meilleur affichage */
+    padding: 12px;
   }
 
   .logo {
-    width: 50px; /* Réduit la taille du logo */
+    width: 50px;
     height: 50px;
+    position: relative;
+    left: 0; /* Centre le logo sur mobile */
+  }
+
+  .container {
+    padding: 15px;
   }
 
   .image-gallery {
-    flex-wrap: wrap; /* Permet aux images de se déplacer sur plusieurs lignes */
+    flex-wrap: wrap; /* Permet aux images de passer sur plusieurs lignes */
     justify-content: center; /* Centre les images */
   }
 
   .image-gallery img {
-    width: 45%; /* Réduit la taille des images pour qu'elles soient bien disposées */
+    width: 45%; /* Ajuste la taille des images pour une meilleure disposition */
+  }
+
+  .bio {
+    max-width: 90%; /* Rend le texte plus lisible sur petits écrans */
   }
 }
+
