@@ -107,7 +107,7 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+    /*flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
     /* overflow-x: auto; Permet le défilement horizontal si nécessaire */
     justify-content: space-between; /* Répartit les liens équitablement */
     padding: 2px;
