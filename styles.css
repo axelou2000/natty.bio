@@ -107,14 +107,28 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Permet d'afficher les liens en colonne sur mobile */
+    flex-direction: column; /* Les liens passent en colonne */
     align-items: center; /* Centre les liens */
     gap: 5px; /* Ajoute un léger espacement */
     padding: 10px 0;
   }
 
   nav a {
-    font-size: 14px; /* Légèrement plus grand pour la lisibilité */
-    padding: 8px 15px;
+    font-size: 14px; /* Ajuste la taille du texte */
+    padding: 8px 15px; /* Ajuste la taille des boutons */
+  }
+
+  .logo {
+    width: 50px; /* Réduit la taille du logo */
+    height: 50px;
+  }
+
+  .image-gallery {
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne */
+    justify-content: center; /* Centre les images */
+  }
+
+  .image-gallery img {
+    width: 45%; /* Ajuste la largeur pour éviter qu'elles soient trop petites */
   }
 }
