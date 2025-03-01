@@ -104,39 +104,38 @@ img {
   position: relatice;
   left: 100px; /* Déplace légèrement l'image vers la droite */
 }
-@media (max-width: 768px) {
+
+   @media (max-width: 768px) {
   header {
-    padding: 15px 0; 
+    padding: 15px 0;
     text-align: center;
   }
 
   nav {
-    flex-direction: column; /* Passe tout en colonne sur mobile */
-    align-items: center; /* Centre les éléments */
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    gap: 10px; /* Réduit l'espace entre les éléments */
+    padding: 0 15px; /* Ajoute un peu de marge à gauche et à droite */
   }
 
   .logo {
-    position: static; /* Empêche le logo de sortir de l'écran */
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px; /* Ajoute un espace sous le logo */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* Évite qu'il soit trop collé aux liens */
+    position: relative;
+    left: 0;
   }
 
   nav div {
     display: flex;
-    flex-direction: column; /* Place les liens en colonne */
-    gap: 10px;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap; /* Permet aux liens de s'adapter à la largeur */
+    gap: 5px; /* Réduit l'espace entre les liens */
   }
 
   nav a {
-    display: block;
-    width: 80%; /* Empêche les liens de toucher les bords */
-    max-width: 250px;
-    text-align: center;
-    font-size: 16px;
-    padding: 12px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 12px; /* Réduit la taille des boutons */
   }
 }
