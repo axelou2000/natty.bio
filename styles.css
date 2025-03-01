@@ -107,26 +107,29 @@ img {
 
 @media (max-width: 768px) {
   nav {
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-    gap: 10px; /* Réduit l'espace entre les liens */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
+    justify-content: space-between; /* Répartit les liens équitablement */
     padding: 10px;
   }
 
   nav div {
     display: flex;
-    gap: 5px; /* Réduit encore l'espacement entre les liens */
+    gap: 5px; /* Réduit l'espace entre les liens */
+    flex-wrap: nowrap;
   }
 
   nav a {
-    font-size: 14px; /* Réduit la taille du texte */
-    padding: 8px 12px; /* Diminue la taille des boutons */
-    border-radius: 20px; /* Ajuste les coins arrondis */
+    font-size: 12px; /* Réduit encore la taille du texte */
+    padding: 6px 10px; /* Diminue la taille des boutons */
+    white-space: nowrap; /* Empêche le texte de se couper */
   }
 
   .logo {
-    width: 60px; /* Réduit la taille du logo */
-    height: 60px;
+    width: 50px; /* Réduit encore la taille du logo */
+    height: 50px;
   }
 }
+
 
 
